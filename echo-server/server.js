@@ -8,6 +8,8 @@ const server = http.createServer((req, res) => {
     hostname: os.hostname(),
   };
 
+  console.log('Incoming request: ' + data.time);
+
   res.setHeader('Content-Type', 'application/json');
   res.end(JSON.stringify(data));
 });
