@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: task-runner
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: task-runner
+  template:
+    metadata:
+      labels:
+        app: task-runner
+    spec:
+      containers:
+      - name: task-runner
+        image: codersociety/task-runner:latest
+        imagePullPolicy: Always
+        name: task-runner
