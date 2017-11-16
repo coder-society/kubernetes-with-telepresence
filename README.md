@@ -1,4 +1,4 @@
-# Run a local process in Kubernetes with Telepresence
+# Run a local process in Kubernetes with [Telepresence](https://www.telepresence.io/)
 
 This repository contains two Node.js applications.
 
